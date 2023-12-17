@@ -1,7 +1,6 @@
 public class Laptop {
     private String name;
     private String series;
-    private String type;
     private Double diagonal;
     private String processor;
     private Double processorFrequency;
@@ -14,7 +13,6 @@ public class Laptop {
 
     public Laptop(String name,
                     String series,
-                    String type,
                     Double diagonal,
                     String processor,
                     Double processorFrequency,
@@ -26,7 +24,6 @@ public class Laptop {
                     String videoCard) {
         this.name = name;
         this.series = series;
-        this.type = type;
         this.diagonal = diagonal;
         this.processor = processor;
         this.processorFrequency = processorFrequency;
@@ -44,10 +41,6 @@ public class Laptop {
 
     public String getSeries() {
         return series;
-    }
-
-    private String getType() {
-        return type;
     }
 
     private Double getProcessorFrequency() {
@@ -89,7 +82,7 @@ public class Laptop {
     @Override
     public String toString() {
         return name + " " +
-                type + ", " +
+                series + ", " +
                 diagonal + "\", " +
                 processor + " " +
                 processorFrequency + "ГГц, " +
